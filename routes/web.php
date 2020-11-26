@@ -28,6 +28,11 @@ Route::get('/new', [
 Route::get('/todos', [
     'uses' => 'TodosController@index'
 ]);
+
+Route::get('/create/todo', [
+    'uses' => 'TodosController@index'
+]);
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
