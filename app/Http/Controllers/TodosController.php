@@ -12,6 +12,10 @@ class TodosController extends Controller
     }
 
     public function store(Request $request){
-        return view('todos')->with('todos',$todos);
+        $todo = new Todo ;
+        $todo->todo = $request->todo;
+        $todo->save();
+        
+        return redirect()->back();
     }
 }

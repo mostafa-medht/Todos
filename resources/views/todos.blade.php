@@ -4,7 +4,7 @@
      
     <div class="row">
         <div class="col-lg-6 m-auto">
-            <form action="/create/todo" method="post">
+            <form action="/create/todo" method="put">
                 {{ csrf_field() }}
                 <input type="text" class="form-control input-lg" placeholder="Create a new todo">
             </form>
